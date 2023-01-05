@@ -4,6 +4,8 @@ import colors from "colors"
 
 import databaseConnection from "./database.js"
 
+import userRoutes from "./routes/users.js"
+
 // dotenv
 dotenv.config()
 
@@ -19,6 +21,7 @@ app.use(express.json())
 // middleware
 
 // routes
+app.use("/api/users", userRoutes)
 
 // init port
 const PORT = process.env.PORT || 5000
