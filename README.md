@@ -1,5 +1,41 @@
 # AppStore
 
+## Usage
+
+### Env Variables
+
+add .env file in then root and add the following
+
+```
+PORT = xxxx ( e.g 5000 )
+PROJECT_TYPE = xxxx ( You have to choose between 'production' and 'development' )
+MONGO_URI = YOUR_MONGO_URI
+JWT_SECRET = YOUR_JWT_SECRET
+```
+
+### Install Dependencies
+
+```
+npm install
+```
+
+### Run The Application
+
+#### Run backend + frontend
+```
+npm run dev 
+```
+
+#### Run backend
+```
+npm run server 
+```
+
+#### Run frontend
+```
+npm run client
+```
+
 ## Streams
 
 ### Register
@@ -55,39 +91,3 @@ Main Page -> Products Page -> Product Page -> Put review
 - POST: api/v1/products/:id        // change product data (e.g stock)
 
 - DELETE: api/v1/products/:id      // delete product
-
-## Usage
-
-### Env Variables
-
-Create .env file in then root and add the following
-
-```
-PORT = xxxx ( e.g 5000 )
-PROJECT_TYPE = xxxx ( You have to choose between 'production' and 'development' )
-MONGO_URI = YOUR_MONGO_URI
-JWT_SECRET = YOUR_JWT_SECRET
-```
-
-### Install Dependencies
-
-```
-npm install
-```
-
-### Run The Application
-
-#### Run backend + frontend
-```
-npm run dev 
-```
-
-#### Run backend
-```
-npm run server 
-```
-
-#### Run frontend
-```
-npm run client
-```
