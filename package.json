@@ -1,0 +1,46 @@
+{
+  "name": "apple-reseller-app",
+  "version": "1.0.0",
+  "description": "Apple reseller",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DumitracheFlorentin/apple-reseller-app.git"
+  },
+  "keywords": [
+    "apple",
+    "reseller",
+    "resellering",
+    "macbook",
+    "iphone",
+    "imac",
+    "ios",
+    "watch",
+    "apple_watch"
+  ],
+  "author": "Florentin Dumitrache",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DumitracheFlorentin/apple-reseller-app/issues"
+  },
+  "homepage": "https://github.com/DumitracheFlorentin/apple-reseller-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
