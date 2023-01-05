@@ -1,4 +1,4 @@
-# AppStore
+# Appsell
 
 ## Usage
 
